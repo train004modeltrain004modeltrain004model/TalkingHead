@@ -2568,7 +2568,9 @@ class TalkingHead {
     let markId = 0; // SSML mark id
     let ttsSentence = []; // Text-to-speech sentence
     let lipsyncAnim = []; // Lip-sync animation sequence
+    console.log(s)
     const letters = [...s];
+    console.log(letters)
     for( let i=0; i<letters.length; i++ ) {
       const isLast = i === (letters.length-1);
       const isSpeakable = letters[i].match(speakables);
